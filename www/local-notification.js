@@ -141,12 +141,12 @@ exports.isIgnoringBatteryOptimizations = function (callback, scope) {
  * @param {Object} scope callback function's scope
  */
 exports.requestIgnoreBatteryOptimizations = function (callback, scope) {
-    // if (device.platform === 'iOS') {
-    //     console.warn('[Notifications] requestIgnoreBatteryOptimizations not supported on iOS');
-    //     callback(true);
-    // }
+    if (device.platform === 'iOS') {
+        console.warn('[Notifications] requestIgnoreBatteryOptimizations not supported on iOS');
+        callback(true);
+        this._exec('requestIgnoreBatteryOptimizations', null, callback, scope);
+    }
 
-    // this._exec('requestIgnoreBatteryOptimizations', null, callback, scope);
 }
 
 /**
