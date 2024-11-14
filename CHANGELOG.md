@@ -11,7 +11,7 @@ If the app is in background, it must not be launched but put in foreground.
 To avoid launching the app in this case, add the following in your config.xml file:
 `<preference name="AndroidLaunchMode" value="singleInstance"/>`
 ## Special Thanks
-https://github.com/powowbox/cordova-plugin-local-notification-12
+https://github.com/chenguanhua123/cordova-plugin-local-notification
 
 #### Version 0.1.3
 - FIX Bug 🐛 :bug
@@ -67,7 +67,7 @@ https://github.com/powowbox/cordova-plugin-local-notification-12
 
 ---
 
-Please also read the [Upgrade Guide](https://github.com/bhandaribhumin/cordova-plugin-local-notification-12/wiki/Upgrade-Guide) for more information.
+Please also read the [Upgrade Guide](https://github.com/chenguanhua123/cordova-plugin-local-notification.git/wiki/Upgrade-Guide) for more information.
 
 #### Version 0.8.5 (22.05.2017)
 - iOS 10
